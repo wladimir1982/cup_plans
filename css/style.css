@@ -1,0 +1,90 @@
+body {
+    background-color: #0000FF;
+    outline: 10px solid #6E6E6E;
+    min-height: 100%;
+    border: 5px solid #6E6E6E;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1230px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px 15px 20px;
+    background-color: #FF0000;
+}
+.container__bronze,
+.container__gold,
+.container__silver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 33.33333%;
+    margin: 0 15px;
+    padding: 35px 15px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+.container__bronze:hover,
+.container__gold:hover,
+.container__silver:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+    transition: all .3s ease;
+}
+.container__gold {
+    padding: 55px 0 55px;
+}
+.container__bronze--title,
+.container__gold--title,
+.container__silver--title {
+    color: #02995b;
+    font-family: Miso, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+.container__bronze-subtitle,
+.container__gold--subtitle,
+.container__silver-subtitle {
+    color: #333333;
+    font-family: Miso, sans-serif;
+    font-size: 56px;
+    margin: auto;
+    padding: 20px 0;
+    text-shadow: 3px 3px 2px black;
+}
+.container__bronze--description,
+.container__gold--description,
+.container__silver--description {
+    color: #333333;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+}
+.container__bronze--title:hover,
+.container__bronze-subtitle:hover,
+.container__bronze--description:hover {
+    color: #cd7f32;
+    text-shadow: 3px 3px 2px black, 0 0 1em #cd7f32;
+    transition: all .3s ease;
+}
+.container__gold--title:hover,
+.container__gold--subtitle:hover,
+.container__gold--description:hover {
+    color: gold;
+    text-shadow: 3px 3px 2px black, 0 0 1em gold;
+}
+.container__silver--title:hover,
+.container__silver-subtitle:hover,
+.container__silver--description:hover {
+    color: silver;
+    text-shadow: 3px 3px 2px black, 0 0 1em silver;
+    transition: all .3s ease;
+}
